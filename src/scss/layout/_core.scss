@@ -10,6 +10,10 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image:url("#{$assets-base}/img/bg.svg");
 
   @media print {
     background: transparent;
@@ -22,6 +26,7 @@ body {
 // Fluid container
 //
 .layout-fluid {
+
   .container,
   [class^="container-"],
   [class*=" container-"] {
@@ -53,7 +58,7 @@ body {
       background: var(--#{$prefix}body-bg);
     }
 
-    > .navbar:first-child {
+    >.navbar:first-child {
       border-top-left-radius: var(--#{$prefix}theme-boxed-border-radius);
       border-top-right-radius: var(--#{$prefix}theme-boxed-border-radius);
     }
